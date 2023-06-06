@@ -16,8 +16,4 @@ class Solution:
                 return False
         return True
     
-c=Solution()
-s = "anagram"
-t = "nagaram"
-ans=c.isAnagram(s, t)
-print(ans)
+

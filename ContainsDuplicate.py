@@ -10,7 +10,3 @@ class Solution:
             
         return False
 
-c=Solution()
-A=[1,2,3,1]
-ans=c.containsDuplicate(A)
-print(ans)

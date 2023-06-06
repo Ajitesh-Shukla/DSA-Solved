@@ -25,10 +25,3 @@ class Solution:
         #     elif sum_cur==target:
         #         return sorted([orig_pos[i], orig_pos[j]])
 
-
-        
-c=Solution()
-nums = [3,2,4]
-target = 6
-ans=c.twoSum(nums, target)
-print(ans)
