@@ -1,5 +1,6 @@
-import GroupAnagrams
-c=GroupAnagrams.Solution()
-strs = ["eat","tea","tan","ate","nat","bat"]
-ans=c.groupAnagrams(strs)
+import TopKFrequentElements
+c=TopKFrequentElements.Solution()
+nums = [1,1,1,2,2,3]
+k = 2
+ans=c.topKFrequent(nums, k)
 print(ans)
