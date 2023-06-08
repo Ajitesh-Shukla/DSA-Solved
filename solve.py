@@ -1,6 +1,5 @@
-import TopKFrequentElements
-c=TopKFrequentElements.Solution()
-nums = [1,1,1,2,2,3]
-k = 2
-ans=c.topKFrequent(nums, k)
+import ProductOfArrayExceptSelf
+c=ProductOfArrayExceptSelf.Solution()
+nums = [-1,1,0,-3,3]
+ans=c.productExceptSelf(nums)
 print(ans)
