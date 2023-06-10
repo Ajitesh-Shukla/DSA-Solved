@@ -1,4 +1,3 @@
-
 class Solution:
     def productExceptSelf(self, nums):
         '''Think map as nums are very less

@@ -1,5 +1,5 @@
-import ProductOfArrayExceptSelf
-c=ProductOfArrayExceptSelf.Solution()
-nums = [-1,1,0,-3,3]
-ans=c.productExceptSelf(nums)
+import LongestConsecutiveElementSubsequence
+c=LongestConsecutiveElementSubsequence.Solution()
+nums=[100,4,200,1,3,2]
+ans=c.longestConsecutive(nums)
 print(ans)
