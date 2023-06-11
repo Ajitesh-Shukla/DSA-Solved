@@ -1,5 +1,5 @@
-import LongestConsecutiveElementSubsequence
-c=LongestConsecutiveElementSubsequence.Solution()
-nums=[100,4,200,1,3,2]
-ans=c.longestConsecutive(nums)
+import ValidPalindrome
+c=ValidPalindrome.Solution()
+s = "A man, a plan, a canal: Panama"
+ans=c.isPalindrome(s)
 print(ans)
