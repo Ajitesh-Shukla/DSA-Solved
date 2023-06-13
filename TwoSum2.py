@@ -1,6 +1,7 @@
 class Solution:
     def twoSum(self, numbers, target: int) :
         '''Array is sorted, use two pointers'''
+        '''Due to sorting, think binary search as well'''
         i, j=0, len(numbers)-1
         while i<=j:
             sum_cur=numbers[i]+numbers[j]
@@ -10,4 +11,3 @@ class Solution:
                 i+=1
             else:
                 j-=1
-                
