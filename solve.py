@@ -1,6 +1,6 @@
-import TwoSum2
-c=TwoSum2.Solution()
-numbers = [2,7,11,15]
+import threeSum
+c=threeSum.Solution()
+nums = [-1,0,1,2,-1,-4]
 target = 9
-ans=c.twoSum(numbers, target)
+ans=c.threeSum(nums)
 print(ans)
