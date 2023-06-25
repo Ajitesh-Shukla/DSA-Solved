@@ -1,6 +1,8 @@
-import threeSum
-c=threeSum.Solution()
-nums = [-1,0,1,2,-1,-4]
-target = 9
-ans=c.threeSum(nums)
+import LongestRepeatingCharacterReplacement
+c=LongestRepeatingCharacterReplacement.Solution()
+# s ="KRSCDCSONAJNHLBMDQGIFCPEKPOHQIHLTDIQGEKLRLCQNBOHNDQGHJPNDQPERNFSSSRDEQLFPCCCARFMDLHADJADAGNNSBNCJQOF"
+# s='ADSCAASSADCCCBDDSEW'
+s = "ABAA"
+k = 0
+ans=c.characterReplacement(s, k)
 print(ans)
