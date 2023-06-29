@@ -1,8 +1,7 @@
-import LongestRepeatingCharacterReplacement
-c=LongestRepeatingCharacterReplacement.Solution()
+import PermutationInString
+c=PermutationInString.Solution()
 # s ="KRSCDCSONAJNHLBMDQGIFCPEKPOHQIHLTDIQGEKLRLCQNBOHNDQGHJPNDQPERNFSSSRDEQLFPCCCARFMDLHADJADAGNNSBNCJQOF"
-# s='ADSCAASSADCCCBDDSEW'
-s = "ABAA"
-k = 0
-ans=c.characterReplacement(s, k)
+s1 ="trinitrophenylmethylnitramine"
+s2="dinitrophenylhydrazinetrinitrophenylmethylnitramine"
+ans=c.checkInclusion(s1, s2)
 print(ans)
