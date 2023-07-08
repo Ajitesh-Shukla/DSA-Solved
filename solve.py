@@ -1,7 +1,6 @@
-import PermutationInString
-c=PermutationInString.Solution()
+import ValidParanthesis
+c=ValidParanthesis.Solution()
 # s ="KRSCDCSONAJNHLBMDQGIFCPEKPOHQIHLTDIQGEKLRLCQNBOHNDQGHJPNDQPERNFSSSRDEQLFPCCCARFMDLHADJADAGNNSBNCJQOF"
-s1 ="trinitrophenylmethylnitramine"
-s2="dinitrophenylhydrazinetrinitrophenylmethylnitramine"
-ans=c.checkInclusion(s1, s2)
+s = "{"
+ans=c.isValid(s)
 print(ans)
