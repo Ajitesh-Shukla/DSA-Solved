@@ -1,6 +1,5 @@
-import ValidParanthesis
-c=ValidParanthesis.Solution()
-# s ="KRSCDCSONAJNHLBMDQGIFCPEKPOHQIHLTDIQGEKLRLCQNBOHNDQGHJPNDQPERNFSSSRDEQLFPCCCARFMDLHADJADAGNNSBNCJQOF"
-s = "{"
-ans=c.isValid(s)
+import GenerateParanthesis
+c=GenerateParanthesis.Solution()
+n=3
+ans=c.generateParenthesis(n)
 print(ans)
