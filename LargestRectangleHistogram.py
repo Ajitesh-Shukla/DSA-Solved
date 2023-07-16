@@ -1,6 +1,6 @@
 class Solution:
     def largestRectangleArea(self, heights: list[int]) -> int:
-        stack=[(-1, -1)]
+        stack=[(-1, -1)]  # Will only include an elem if it is greater in value than the previous elements
         max_area=0
         j=0
         for j in range(len(heights)):
@@ -11,6 +11,7 @@ class Solution:
                     prev_h=stack[-1]
                     max_area=max(max_area, (j-prev_h[1]-1)*cur_h[0])
                 stack.append((heights[j], j))
+        '''To see the max area formed by elements left in the stack, upto the final elem'''
         if stack:
             for i, elem in enumerate(stack):
                 if i==0:
