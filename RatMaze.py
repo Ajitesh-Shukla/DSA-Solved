@@ -4,9 +4,7 @@ mat=[[1, 0, 0, 0],
     [1, 1, 0, 0],
     [0, 1, 1, 1]]
 
-
 def getPath(i, j, maze, path, all_paths):
-    print(path, i, j)
     # Base
     if i==len(maze)-1 and j==len(maze[0])-1:
         path.append((i, j))
@@ -23,7 +21,7 @@ def getPath(i, j, maze, path, all_paths):
     path.append((i, j))
     p1=getPath(i+1, j, maze, path, all_paths)
     p2=getPath(i, j+1, maze, path, all_paths)
-    elem=path.pop(-1)
+    path.pop(-1)   # Checked all paths from (i, j), thus back to previous now
     if p1 or p2:
         return True
 
