@@ -1,7 +1,8 @@
 class Solution:
     def isBalanced(self, root) -> bool:
         '''For a balanced height binary tree, the left and right height difference 
-        should be less than equal to one, for all level nodes'''
+        should be less than equal to one, for all level nodes
+        need another function as we need a return height, while our final ans will be a return bool'''
         res=[True]
         def check_balance(root):
             if not root:
