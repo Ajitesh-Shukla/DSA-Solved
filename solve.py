@@ -8,8 +8,8 @@ class TreeNode:
 
 
 
-import LargestRectangleHistogram
-c=LargestRectangleHistogram.Solution()
-heights = [2,1,2]
-ans=c.largestRectangleArea(heights)
+import NoOfIslands
+c=NoOfIslands.Solution()
+grid = [["1","1","1"],["0","1","0"],["1","1","1"]]
+ans=c.numIslands(grid)
 print(ans)
