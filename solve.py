@@ -8,8 +8,8 @@ class TreeNode:
 
 
 
-import NoOfIslands
-c=NoOfIslands.Solution()
-grid = [["1","1","1"],["0","1","0"],["1","1","1"]]
-ans=c.numIslands(grid)
+import redundantConnection
+c=redundantConnection.Solution()
+grid = [[1,3],[3,4],[1,5],[3,5],[2,3]]
+ans=c.findRedundantConnection(grid)
 print(ans)
