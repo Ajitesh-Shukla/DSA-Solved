@@ -8,8 +8,8 @@ class TreeNode:
 
 
 
-import redundantConnection
-c=redundantConnection.Solution()
-grid = [[1,3],[3,4],[1,5],[3,5],[2,3]]
-ans=c.findRedundantConnection(grid)
+import numConnectedComponents
+c=numConnectedComponents.Solution()
+grid =[[0, 1], [1, 2], [3, 4]]
+ans=c.connectedComponents(5, grid)
 print(ans)

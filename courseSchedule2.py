@@ -1,5 +1,5 @@
 class Solution:
-    def findOrder(self, numCourses: int, prerequisites: List[List[int]]) -> List[int]:
+    def findOrder(self, numCourses: int, prerequisites: list[list[int]]) -> list[int]:
         prereq = {c: [] for c in range(numCourses)}
         for crs, pre in prerequisites:
             prereq[crs].append(pre)

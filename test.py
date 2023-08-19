@@ -1,3 +1,9 @@
+from collections import Counter
+a=['A', 'B', 'A']
+b=Counter(a)
+print(b)
+
+
 # A single node of a singly linked list
 class Node:
   # constructor
