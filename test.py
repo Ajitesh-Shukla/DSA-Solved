@@ -1,8 +1,8 @@
 from collections import Counter
-a=['A', 'B', 'A']
-b=Counter(a)
-print(b)
-
+import heapq
+a=[]
+heapq.heapify(a)
+print(heapq.heappop(a))
 
 # A single node of a singly linked list
 class Node:
