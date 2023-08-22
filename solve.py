@@ -5,11 +5,8 @@ class TreeNode:
         self.left = left
         self.right = right
 
-
-
-
-import numConnectedComponents
-c=numConnectedComponents.Solution()
-grid =[[0, 1], [1, 2], [3, 4]]
-ans=c.connectedComponents(5, grid)
+import reconstructItenary
+c=reconstructItenary.Solution()
+grid =[["JFK","SFO"],["JFK","ATL"],["SFO","ATL"],["ATL","JFK"],["ATL","SFO"]]
+ans=c.findItinerary(grid)
 print(ans)
