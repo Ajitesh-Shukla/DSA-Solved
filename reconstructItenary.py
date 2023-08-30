@@ -32,7 +32,6 @@ class Solution:
                 return False
             
             # Computation
-
             for i, neighbor in enumerate(all_map[node]):
                 # print(neighbor)
                 visited.append(neighbor)

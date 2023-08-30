@@ -1,53 +1,38 @@
-def check_critical(a, b, first, last):   # a is substring, b is the string to check
-    if first not in b.keys():
-        return 1
-    if last not in b.keys():
-        return 0
-    if a[first]==b[first] and a[last]==b[last]:
-        return -1   # both critical
-    elif a[first]==b[first] and a[last]!=b[last]:
-        return 0   # First critical
-    else:
-        return 1   # No critical or last critical
-
 class Solution:
     def minWindow(self, s: str, t: str) -> str:
+        '''Neetcode approach
+        Take a sliding window, insteading of comparing everything everytime, take a count of haves and needs
+        Whenever an element from target is observed inrement its score in source map, if it exactly matches the target
+        map, that means, it is equal to it for the first time, increment have by 1
+        when have==need, start removing elements from the left till again have != need'''
+
+        tar={c:0 for c in t}
+        src={c:0 for c in s}   # Store everything in the window
+        for elem in t:
+            tar[elem]+=1
+
+        have, need=0, len(tar.keys())   # These save us the need to check each and every value in map all the time
+        l=0
+        min_res, min_len= None, None
+        for r in range(len(s)):
+            src[s[r]]+=1
+            if s[r] in tar and src[s[r]]==tar[s[r]]:
+                have+=1
+            if have==need:
+                while have==need:
+                    src[s[l]]-=1
+                    if s[l] in tar and src[s[l]]<tar[s[l]]:
+                        have-=1
+                    if not min_len or r-l+1<min_len:
+                        min_len=r-l+1
+                        min_res=s[l:r+1]
+                    l+=1
+        if not min_res:
+            return ""
+        return min_res
 
 
-        # Doesn't work, can't differentiate between two different substrings
-        # if len(t)>len(s):
-        #     return ""
-        # i, j=0, len(s)-1
-        # all_elem='abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ'
-        # dict_substr={}
-        # dict_t={}
-        # for elem in s:
-        #     dict_substr[elem]=dict_substr.get(elem, 0)+1
-        # for elem in t:
-        #     dict_t[elem]=dict_t.get(elem, 0)+1
-
-        # # check if every elem in t is in the full string s
-        # for elem in dict_t.keys():
-        #     if elem not in dict_substr.keys() or dict_substr[elem]<dict_t[elem]:
-        #         return ""
-
-        # '''At every step check if the strings are critical, 
-        # i.e. if the elem in t have counts lesser than in s'''
+                
         
-        # while i<=j:
-        #     idx=check_critical(dict_substr, dict_t, s[i], s[j])
-            
-        #     if idx==-1:
-        #         return s[i:j+1]
-        #     elif idx==0:
-        #         dict_substr[s[j]]-=1
-        #         j-=1
 
-        #     else:
-        #         dict_substr[s[i]]-=1
-        #         i+=1
-        # return s
-        
-            
-        
-        
+                

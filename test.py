@@ -1,9 +1,8 @@
-from collections import Counter
+from collections import Counter, defaultdict
 import heapq
-a=[]
-if a:
-  print('here')
-
+a={'a':1}
+b={'a':2}
+print(a==b)
 # A single node of a singly linked list
 class Node:
   # constructor

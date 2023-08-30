@@ -11,7 +11,7 @@ class Solution:
         longest = 0
 
         for n in nums:
-            # check if its the start of a sequence
+            # check if its the start of a sequence, compute only for the starting points of sequence
             if (n - 1) not in numSet:
                 length = 1
                 while (n + length) in numSet:   # Coninue up until you get endpoint

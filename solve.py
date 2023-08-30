@@ -5,8 +5,9 @@ class TreeNode:
         self.left = left
         self.right = right
 
-import reconstructItenary
-c=reconstructItenary.Solution()
-grid =[["JFK","SFO"],["JFK","ATL"],["SFO","ATL"],["ATL","JFK"],["ATL","SFO"]]
-ans=c.findItinerary(grid)
+import SlidingWindowMax
+c=SlidingWindowMax.Solution()
+nums = [1,3,-1,-3,5,3,6,7]
+k = 3
+ans=c.maxSlidingWindow(nums, k)
 print(ans)
