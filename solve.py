@@ -5,9 +5,8 @@ class TreeNode:
         self.left = left
         self.right = right
 
-import SlidingWindowMax
-c=SlidingWindowMax.Solution()
-nums = [1,3,-1,-3,5,3,6,7]
-k = 3
-ans=c.maxSlidingWindow(nums, k)
+import subsets2
+c=subsets2.Solution()
+nums = [1,2,2, 2]
+ans=c.subsetsWithDup(nums)
 print(ans)
