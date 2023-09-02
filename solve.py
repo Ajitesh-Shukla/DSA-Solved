@@ -5,8 +5,8 @@ class TreeNode:
         self.left = left
         self.right = right
 
-import subsets2
-c=subsets2.Solution()
-nums = [1,2,2, 2]
-ans=c.subsetsWithDup(nums)
+import houseRobber
+c=houseRobber.Solution()
+nums = [1,2,3,1]
+ans=c.rob(nums)
 print(ans)
