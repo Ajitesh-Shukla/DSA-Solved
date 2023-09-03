@@ -1,6 +1,7 @@
 from collections import Counter, defaultdict
 import heapq
-a=[]
+a={(1,2): 'a'}
+print(a[(1,2)])
 # A single node of a singly linked list
 class Node:
   # constructor
