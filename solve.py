@@ -5,9 +5,8 @@ class TreeNode:
         self.left = left
         self.right = right
 
-import wordBreak
-c=wordBreak.Solution()
-s = "leetcode"
-wordDict = ["leet","code"]
-ans=c.wordBreak(s, wordDict)
+import partitionEqualSubsetSum
+c=partitionEqualSubsetSum.Solution()
+nums = [1,2,3,5]
+ans=c.canPartition(nums)
 print(ans)
