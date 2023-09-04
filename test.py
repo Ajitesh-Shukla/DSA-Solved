@@ -1,7 +1,6 @@
 from collections import Counter, defaultdict
 import heapq
-a={(1,2): 'a'}
-print(a[(1,2)])
+print(1+float('inf'))
 # A single node of a singly linked list
 class Node:
   # constructor

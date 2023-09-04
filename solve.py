@@ -5,8 +5,9 @@ class TreeNode:
         self.left = left
         self.right = right
 
-import decodeWays
-c=decodeWays.Solution()
-s="12"
-ans=c.numDecodings(s)
+import wordBreak
+c=wordBreak.Solution()
+s = "leetcode"
+wordDict = ["leet","code"]
+ans=c.wordBreak(s, wordDict)
 print(ans)
