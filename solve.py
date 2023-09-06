@@ -5,8 +5,8 @@ class TreeNode:
         self.left = left
         self.right = right
 
-import partitionEqualSubsetSum
-c=partitionEqualSubsetSum.Solution()
-nums = [1,2,3,5]
-ans=c.canPartition(nums)
+import bestTime2BuySellCooldown
+c=bestTime2BuySellCooldown.Solution()
+prices = [1,2,3,0,2]
+ans=c.maxProfit(prices)
 print(ans)
