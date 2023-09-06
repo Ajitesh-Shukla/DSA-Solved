@@ -5,8 +5,9 @@ class TreeNode:
         self.left = left
         self.right = right
 
-import bestTime2BuySellCooldown
-c=bestTime2BuySellCooldown.Solution()
-prices = [1,2,3,0,2]
-ans=c.maxProfit(prices)
+import coinChange2
+c=coinChange2.Solution()
+amount = 5
+coins = [1,2,5]
+ans=c.change(amount, coins)
 print(ans)
