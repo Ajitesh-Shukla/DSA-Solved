@@ -5,9 +5,8 @@ class TreeNode:
         self.left = left
         self.right = right
 
-import targetSum
-c=targetSum.Solution()
-nums = [1,1,1,1,1]
-target = 3
-ans=c.findTargetSumWays(nums, target)
+import longestIncPathInMat
+c=longestIncPathInMat.Solution()
+matrix = [[9,9,4],[6,6,8],[2,1,1]]
+ans=c.longestIncreasingPath(matrix)
 print(ans)
