@@ -5,8 +5,9 @@ class TreeNode:
         self.left = left
         self.right = right
 
-import longestIncPathInMat
-c=longestIncPathInMat.Solution()
-matrix = [[9,9,4],[6,6,8],[2,1,1]]
-ans=c.longestIncreasingPath(matrix)
+import editDistance
+c=editDistance.Solution()
+word1 = "intention"
+word2 = "execution"
+ans=c.minDistance(word1, word2)
 print(ans)
