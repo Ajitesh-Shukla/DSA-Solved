@@ -5,9 +5,8 @@ class TreeNode:
         self.left = left
         self.right = right
 
-import editDistance
-c=editDistance.Solution()
-word1 = "intention"
-word2 = "execution"
-ans=c.minDistance(word1, word2)
+import spiralMatrix
+c=spiralMatrix.Solution()
+matrix = [[1,2,3],[4,5,6],[7,8,9]]
+ans=c.spiralOrder(matrix)
 print(ans)
