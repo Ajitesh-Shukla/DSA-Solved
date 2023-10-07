@@ -5,8 +5,10 @@ class TreeNode:
         self.left = left
         self.right = right
 
-import spiralMatrix
-c=spiralMatrix.Solution()
-matrix = [[1,2,3],[4,5,6],[7,8,9]]
-ans=c.spiralOrder(matrix)
+
+import minSizeSubarraySum
+c=minSizeSubarraySum.Solution()
+target = 11
+nums = [1,1,1,1,1,1,1,1]
+ans=c.minSubArrayLen(target, nums)
 print(ans)
